@@ -12,6 +12,8 @@ zhihu daily API used in [知了](http://6133studio.com/cicada.html>)
 Download and drag the `SRC` folder into your Xcode project
 
 #### CocoaPods
+Add `zhihudailyAPI` to your Podfile and run pod install.
+
 
 ### Interface
 
