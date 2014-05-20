@@ -14,6 +14,9 @@ Download and drag the `SRC` folder into your Xcode project
 #### CocoaPods
 Add `zhihudailyAPI` to your Podfile and run pod install.
 
+### Dependency
+
+- AFNetWorking
 
 ### Interface
 
