@@ -16,14 +16,12 @@
     
     if (self) {
         self.title = dict[@"title"];
-        self.URL = dict[@"url"];
-        self.imageURL = dict[@"image"];
+        self.images = dict[@"images"];
         self.shareURL = dict[@"share_url"];
-        self.thumbnailURL = dict[@"thumbnail"];
         self.gaPrefix = dict[@"ga_prefix"];
         self.postID = dict[@"id"];
         self.date = dict[@"date"];
-        self.displayDate = dict[@"display_date"];
+        self.type = [dict[@"type"] integerValue];
     }
     
     return self;

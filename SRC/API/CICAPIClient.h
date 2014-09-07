@@ -12,7 +12,7 @@
 @interface CICAPIClient : NSObject
 
 + (instancetype)sharedClient;
-
+    
 - (void)getLatestPostsSuccess:(void (^)(NSString *date, NSArray *posts))success
                       failure:(void (^)(NSError *error))failure;
 
@@ -23,4 +23,11 @@
 - (void)getPostContentByID:(NSString *)postID
                    success:(void (^)(CICPostContentModel *content))success
                    failure:(void (^)(NSError *error))failure;
+
+- (void)getThemesSuccess:(void (^)(NSArray *themes))success
+                 failure:(void (^)(NSError *error))failure;
+
+- (void)getPostsByThemeID:(NSString *)themeID
+                  success:(void (^)(NSArray *posts))success
+                  failure:(void (^)(NSError *error))failure;
 @end

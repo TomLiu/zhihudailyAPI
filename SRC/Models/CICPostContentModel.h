@@ -9,6 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @interface CICPostContentModel : NSObject
-@property (strong, nonatomic) NSString *body;
-@property (strong, nonatomic) NSString *css;
+
+@property (nonatomic, strong) NSString *body;
+@property (nonatomic, strong) NSArray *css;
+@property (nonatomic, strong) NSArray *js;
+@property (nonatomic, strong) NSString *postID;
+@property (nonatomic, strong) NSString *imageSource;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *image;
+@property (nonatomic, strong) NSString *shareURL;
+@property (nonatomic, strong) NSString *gaPrefix;
+@property (nonatomic, assign) NSInteger type;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end

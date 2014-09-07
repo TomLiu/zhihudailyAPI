@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68524C5919BC391600C5919D /* CICThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68524C5819BC391600C5919D /* CICThemeModel.m */; };
 		936AA244D0554C0C865DEC94 /* libPods-zhihudailyAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B038523D5744085A1018D95 /* libPods-zhihudailyAPI.a */; };
 		E2B8921E192A5B7700859D8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B8921D192A5B7700859D8F /* Cocoa.framework */; };
 		E2B89228192A5B7700859D8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2B89226192A5B7700859D8F /* InfoPlist.strings */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		1B038523D5744085A1018D95 /* libPods-zhihudailyAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zhihudailyAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68524C5719BC391600C5919D /* CICThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CICThemeModel.h; sourceTree = "<group>"; };
+		68524C5819BC391600C5919D /* CICThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CICThemeModel.m; sourceTree = "<group>"; };
 		E2B8921A192A5B7700859D8F /* zhihudailyAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhihudailyAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8921D192A5B7700859D8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E2B89220192A5B7700859D8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -195,6 +198,8 @@
 				E2B89263192A5E3500859D8F /* CICPostContentModel.m */,
 				E2B89264192A5E3500859D8F /* CICPostModel.h */,
 				E2B89265192A5E3500859D8F /* CICPostModel.m */,
+				68524C5719BC391600C5919D /* CICThemeModel.h */,
+				68524C5819BC391600C5919D /* CICThemeModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B89268192A5E3500859D8F /* CICPostModel.m in Sources */,
+				68524C5919BC391600C5919D /* CICThemeModel.m in Sources */,
 				E2B89231192A5B7700859D8F /* AppDelegate.m in Sources */,
 				E2B89267192A5E3500859D8F /* CICPostContentModel.m in Sources */,
 				E2B8922A192A5B7700859D8F /* main.m in Sources */,
