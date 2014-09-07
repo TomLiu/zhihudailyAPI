@@ -15,10 +15,10 @@
     self = [super init];
     
     if (self) {
-        self.themeID = dict[@"id"];
-        self.color = dict[@"color"];
-        self.desc = dict[@"description"];
-        self.name = dict[@"name"];
+        _themeID = dict[@"id"];
+        _color = dict[@"color"];
+        _desc = dict[@"description"];
+        _name = dict[@"name"];
     }
     
     return self;

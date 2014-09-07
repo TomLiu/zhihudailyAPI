@@ -14,10 +14,5 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    [[CICAPIClient sharedClient] getPostsByThemeID:@"8" success:^(NSArray *posts) {
-        NSLog(@"%@", posts);
-    } failure:^(NSError *error) {
-        
-    }];
 }
 @end

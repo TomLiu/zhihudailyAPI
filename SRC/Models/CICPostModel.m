@@ -15,13 +15,13 @@
     self = [super init];
     
     if (self) {
-        self.title = dict[@"title"];
-        self.images = dict[@"images"];
-        self.shareURL = dict[@"share_url"];
-        self.gaPrefix = dict[@"ga_prefix"];
-        self.postID = dict[@"id"];
-        self.date = dict[@"date"];
-        self.type = [dict[@"type"] integerValue];
+        _title = dict[@"title"];
+        _images = dict[@"images"];
+        _shareURL = dict[@"share_url"];
+        _gaPrefix = dict[@"ga_prefix"];
+        _postID = dict[@"id"];
+        _date = dict[@"date"];
+        _type = [dict[@"type"] integerValue];
     }
     
     return self;

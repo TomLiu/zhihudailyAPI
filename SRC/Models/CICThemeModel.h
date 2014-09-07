@@ -10,11 +10,11 @@
 
 @interface CICThemeModel : NSObject
 
-@property (nonatomic, strong) NSString *color;
-@property (nonatomic, strong) NSString *themeID;
-@property (nonatomic, strong) NSString *image;
-@property (nonatomic, strong) NSString *desc;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, readonly, copy) NSNumber *themeID;
+@property (nonatomic, readonly, copy) NSString *color;
+@property (nonatomic, readonly, copy) NSString *image;
+@property (nonatomic, readonly, copy) NSString *desc;
+@property (nonatomic, readonly, copy) NSString *name;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end

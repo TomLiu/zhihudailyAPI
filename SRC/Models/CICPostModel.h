@@ -10,13 +10,13 @@
 
 @interface CICPostModel : NSObject
 
-@property (nonatomic, strong) NSString *date;
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *shareURL;
-@property (nonatomic, strong) NSString *gaPrefix;
-@property (nonatomic, strong) NSArray *images;
-@property (nonatomic, strong) NSString *postID;
-@property (nonatomic, assign) NSInteger type;
+@property (nonatomic, readonly, copy) NSNumber *postID;
+@property (nonatomic, readonly, copy) NSArray *images;
+@property (nonatomic, readonly, copy) NSString *date;
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSString *shareURL;
+@property (nonatomic, readonly, copy) NSString *gaPrefix;
+@property (nonatomic, readonly, assign) NSInteger type;
 
 - (id)initWithDictionary:(NSDictionary *)dict;
 @end
