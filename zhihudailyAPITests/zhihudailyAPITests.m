@@ -133,4 +133,20 @@
     }];
 }
 
+- (void)testGetThemePostsBefore
+{
+    XCTestExpectation *getDataExpectation = [self expectationWithDescription:@"get theme posts before"];
+    
+    [[CICAPIClient sharedClient] getThemePosts:@"11" before:@"4155204" success:^(NSArray *posts) {
+        if (posts.count > 0) {
+            [getDataExpectation fulfill];
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+    
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError *error) {
+        
+    }];
+}
 @end

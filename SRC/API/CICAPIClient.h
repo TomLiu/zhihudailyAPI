@@ -30,4 +30,9 @@
 - (void)getPostsByThemeID:(NSString *)themeID
                   success:(void (^)(NSArray *posts))success
                   failure:(void (^)(NSError *error))failure;
+
+- (void)getThemePosts:(NSString *)themeID
+               before:(NSString *)postID
+              success:(void (^)(NSArray *posts))success
+              failure:(void (^)(NSError *error))failure;
 @end

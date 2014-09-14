@@ -240,4 +240,45 @@ static NSString * const KCICBaseURL = @"http://news-at.zhihu.com/api/3/";
          }
      }];
 }
+
+- (void)getThemePosts:(NSString *)themeID
+               before:(NSString *)postID
+              success:(void (^)(NSArray *posts))success
+              failure:(void (^)(NSError *error))failure
+{
+    NSString *path = [NSString stringWithFormat:@"theme/%@/before/%@", themeID, postID];
+    
+    [_httpClient getPath:path
+              parameters:nil
+                 success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSError *error;
+         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                              options:NSJSONReadingMutableContainers
+                                                                error:&error];
+         
+         if (error && failure) {
+             failure(error);
+             return;
+         }
+         
+         NSMutableArray *posts = [NSMutableArray array];
+         
+         for (NSDictionary *postDict in dict[@"stories"]) {
+             CICPostModel *postModel = [[CICPostModel alloc] initWithDictionary:postDict];
+             [posts addObject:postModel];
+         }
+         
+         if (success) {
+             success(posts);
+         }
+         
+     }
+                 failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         if (error && failure) {
+             failure(error);
+         }
+     }];
+}
 @end
